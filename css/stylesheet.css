@@ -1,32 +1,93 @@
+/* Variablen für die verschiedene Stylingoptionen */
+:root{
+    --lightgray: lightgray;
+    --green: #65ce65;
+    --blue: #00b3f9;
+}
+
 body {
-    background-color: lightgray;
+    background-color: var(--lightgray);
+    scroll-behavior: smooth;
+    padding: 2em;
+}
+
+.icon img {
+    height : 50px;
+    width: 50px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 20px;
+    flex: 1 100%;
+}
+
+.header {
+    background: var(--green);
+}
+
+.about_me {
+    text-align: left;
+    background: var(--blue);
+}
+
+.aside-1 {
+    background: goldenrod;
+}
+
+.aside-2 {
+    background: hotpink;
+}
+
+.footer {
+    background: red;
+}
+
+@media all and (min-width:600px){
+    .aside {
+        flex: 1 0 0;
     }
-
-.intro {
-    text-align: center;
 }
 
-.intro > p {
-    font-size: larger;
-    line-height: 0.5;
+@media all and (min-width:800px){
+    .main {flex: 3 0px; }
+    .aside-1 {order: 1;}
+    .main {order: 2;}
+    .aside-2 {order: 3;}
+    .footer {order: 4;}
 }
 
-.intro > h1 {
-   word-spacing : 15px;
+@media all and (max-width: 800px){
+    .navigation {
+        justify-content: space-around;
+    }
 }
 
-.about {
-    padding: 15px;
-    margin-left: 2%;
-    border: 5px groove green;
-    border-width: 3.5px 5px;
-}
-
-.about > h3 {
-    line-height: 0.01;
-    text-align: center;
-}
-
-.about > p {
-    line-height: 1.4;
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        padding: 0;
+    }
 }

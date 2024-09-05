@@ -1,8 +1,9 @@
-/* Variablen für die verschiedene Stylingoptionen */
+/* Variablen für die verschiedenen Farboptionen */
 :root{
     --lightgray: lightgray;
     --green: #65ce65;
     --blue: #00b3f9;
+    --orange: orange;
 }
 
 body {
@@ -19,17 +20,17 @@ body {
 .navigation {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     list-style-type: none;
     margin: 0;
 }
 
 .navigation a {
-    text-decoration: none;
     display: block;
     padding: 1em;
     padding: 10px;
+    cursor: context-menu;
 }
 
 .wrapper {
@@ -44,17 +45,13 @@ body {
     flex: 1 100%;
 }
 
-.header {
-    background: var(--green);
-}
-
 .about_me {
-    text-align: left;
+    text-align:center;
     background: var(--blue);
 }
 
 .aside-1 {
-    background: goldenrod;
+    background: var(--green);
 }
 
 .aside-2 {
@@ -63,18 +60,18 @@ body {
 
 .footer {
     background: red;
+    text-align: center;
 }
-
+/* vvvvvvvvvvv Flex Einstellungen bei verschiedenen Bildschirmgrößen vvvvvvvvvvvvvv */
 @media all and (min-width:600px){
     .aside {
-        flex: 1 0 0;
+        flex: 1;
     }
 }
 
 @media all and (min-width:800px){
-    .main {flex: 3 0px; }
-    .aside-1 {order: 1;}
-    .main {order: 2;}
+    .about_me {order: 1;}
+    .aside-1 {order: 2;}
     .aside-2 {order: 3;}
     .footer {order: 4;}
 }

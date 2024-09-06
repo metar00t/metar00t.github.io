@@ -2,39 +2,113 @@
 <html lang="de">
     <head>
         <meta charset="utf-8">
-        <title>David-Paul Adams</title>
-        <link rel="icon" type="icon/x-icon" href="./img/webdev-icon.png">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="./css/stylesheet.css">
+        <meta name="author" content="David-Paul Adams">
+        <title>
+            Welcome to my Portfolio!
+        </title>
+        <link rel="icon" type="icon/x-icon" href="./img/webdev-icon.png">
+        <link rel="stylesheet" href="./css/styling.css">
+        <script src="https://kit.fontawesome.com/6bfe7427b4.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="wrapper">
         <header class="header">
-            <h1>David-Paul Adams</h1>
-            <p>Auszubildender im Fachbereich IT-Anwendungsentwicklung</p>
+            <h1>Hi! I'm David-Paul Adams</h1>
+            <p>Trainee as an IT specialist - specializing in application development</p>
         </header>
-            <nav>
-                <ul class="navigation">
-                    <li class="icon"><a href="https://www.bbw-suedhessen.de/" target="_blank"><img src="./img/bbw_icon.png" alt="berufsbildungswerk webseite" title="Die Webseite des Berufsbildungswerks Südhessen"></a></li>
-                    <li class="icon"><a href="https://github.com/metar00t" target="_blank"><img src="./img/github-mark.png" alt="github profil" title="Mein Github Profil"></a></li>
-                    <li class="icon"><a href="https://code.golf/golfers/metar00t" target="_blank"><img src="./img/code_golf_icon.png" alt="codegolf profil" title="Mein Code.Golf Profil"></a></li>
-                    <li class="icon"><a href="https://www.codewars.com/users/metar00t" target="_blank"><img src="./img/codewars_icon.svg" alt="codewars profil" title="Mein Codewars Profil"></a></li>
+            <nav class="dropdown">
+                <label for="touch">
+                    <span>
+                        <i class="fa-solid fa-laptop-code"></i> I can speak in:
+                    </span>
+                </label>
+                <input type="checkbox" id="touch">
+                <ul class="slide">
+                    <li>
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-php"></i> PHP
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-c"></i> C
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-v"></i><i class="fa-solid fa-b"></i> VisualBasic (.NET)
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-css3-alt"></i> CSS
+                    </li>
                 </ul>
             </nav>
-            <article class="about_me">
-                <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Pharetra libero odio ad curabitur aliquet netus praesent. Mauris
-                    congue mus aenean posuere eros dolor himenaeos. Molestie leo ultricies cras semper habitasse odio duis. Ridiculus nam
-                    sollicitudin tempus lacinia rhoncus dictumst quam nam. Nullam fames cursus blandit finibus; proin dictum ridiculus
-                    phasellus. Semper himenaeos ac eros litora interdum cursus. Quam ad curabitur sem arcu arcu. Arcu venenatis dignissim
-                    sed fringilla aptent etiam phasellus posuere finibus. Placerat vehicula nunc dignissim; venenatis pellentesque potenti
-                    habitasse.
-                </p>
-            </article>
-            <aside class="aside aside-1">Coding Kenntnisse:</aside>
-            <aside class="aside aside-2">Javascript:</aside>
+            <nav class="dropdown">
+                <label for="touch2">
+                    <span>
+                        <i class="fa-solid fa-download"></i> Downloadable Documents:
+                    </span>
+                </label>
+                <input type="checkbox" id="touch2">
+                <ul class="slide">
+                    <li>
+                        <a href="./dlc/Adams_David-Paul_Lebenslauf.pdf" download="Adams_David-Paul_CV">
+                            <i class="fa-solid fa-file-pdf"></i>CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./dlc/Mini Coding Skill Tree.pdf" download>
+                            <i class="fa-solid fa-file-pdf"></i>Coding Skill Tree
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         <footer class="footer">
-            Auszubildender im 2. Lehrjahr beim Berufsbildungswerk Südhessen gGmbH
+            <nav>
+                <ul class="navigation">
+                    <li class="icon">
+                        <a href="https://www.bbw-suedhessen.de/" target="_blank">
+                        <img src="./img/bbw_icon.png" alt="berufsbildungswerk webseite" title="Homepage vom Berufsbildungswerk in Karben">
+                        </a>
+                        <p>
+                            Berufsbildungswerk
+                            <br>
+                            Südhessen
+                        </p>
+                        </li>
+                    <li class="icon">
+                        <a href="https://github.com/metar00t" target="_blank">
+                        <img src="./img/github-brands-solid.svg" alt="github profil" title="Mein Github Profil">
+                        </a>
+                        <p>
+                            Github
+                        </p>
+                        </li>
+                    <li class="icon">
+                        <a href="https://code.golf/golfers/metar00t" target="_blank">
+                        <img src="./img/code_golf_icon.png" alt="codegolf profil" title="Mein Code.Golf Profil">
+                        </a>
+                        <p>
+                            Code.Golf
+                        </p>
+                        </li>
+                    <li class="icon">
+                        <a href="https://www.codewars.com/users/metar00t" target="_blank">
+                        <img src="./img/codewars_icon.svg" alt="codewars profil" title="Mein Codewars Profil">
+                        </a>
+                        <p>
+                            Codewars
+                        </p>
+                        </li>
+                    <li class="icon">
+                        <a href="mailto:david-paul.adams@outlook.de">
+                            <img src="./img/envelope-regular.svg" alt="Briefumschlag" title="Lassen Sie mir eine Mail da">
+                        </a>
+                        <p>
+                            Mail
+                        </p>
+                    </li>
+                </ul>
+            </nav>
         </footer>
         </div>
         <script src="./js/config.js"></script>

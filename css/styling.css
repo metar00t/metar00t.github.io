@@ -1,0 +1,140 @@
+/* Variablen für die verschiedenen Farboptionen */
+:root{
+    --lightgray: lightgray;
+    --green: #65ce65;
+    --silver: silver;
+    --black: black;
+}
+
+body {
+    background-color: var(--lightgray);
+    scroll-behavior: smooth;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.icon img {
+    height : 50px;
+    width: 50px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1em;
+    cursor: alias;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.main {
+    text-align: center;
+    background: var(--blue);
+}
+
+.aside-1 {
+    background: var(--green);
+}
+
+.aside-2 {
+    background: var(--blue);
+}
+
+.footer {
+    text-align: center;
+}
+
+/* HTML Nav Styling */
+
+.dropdown nav {
+    width: 300px;
+    margin: 40px auto;
+}
+
+.dropdown li {
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    background: var(--silver);
+}
+
+span {
+    font-size: 1.3em;
+    cursor: pointer;
+    display: block;
+}
+
+span::after {
+    float: right;
+    right: 10%;
+}
+
+/* Slider Styling */
+
+.slide {
+    clear: both;
+    width: 100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: heigth .4s ease;
+}
+
+.slide li {
+    padding: 20px;
+    margin-right: 60px;
+}
+
+.slide a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#touch {position: absolute; opacity: 0; height: 0px;}
+#touch:checked + .slide {height: auto;}
+#touch2 {position: absolute; opacity: 0; height: 0px;}
+#touch2:checked + .slide {height: auto;}
+
+/* Large Screens */
+@media all and (min-width:800px){
+    .about_me { flex: 3 0px;}
+    .about_me {order: 1;}
+    .aside-1 {order: 2;}
+    .aside-2 {order: 3;}
+    .footer {order: 4;}
+}
+/* Medium Screens */
+@media all and (min-width: 600px) {
+    .aside { display: flex 1;}
+}
+/* Medium Screens */
+@media all and (max-width: 800px){
+    .navigation {
+        justify-content: space-around;
+    }
+}
+/* Small Screens */
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+}

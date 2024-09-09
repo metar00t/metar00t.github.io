@@ -1,1 +1,4 @@
-console.log("this is the config.js")
+function is_Checkbox_Checked(x)
+{
+    x.classList.toggle("fa-angle-up")
+}

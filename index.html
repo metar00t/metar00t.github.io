@@ -16,14 +16,15 @@
         <header class="header">
             <h1>Hi! I'm David-Paul Adams</h1>
             <p>Trainee as an IT specialist - specializing in application development</p>
+            <a href="mailto:david-paul.adams@outlook.de"><i class="fa-regular fa-envelope"></i> Get in touch with me</a>
         </header>
             <nav class="dropdown">
-                <label for="touch">
+                <label for="languages">
                     <span>
-                        <i class="fa-solid fa-laptop-code"></i> I can speak in:
+                        Languages <i class="fa-solid fa-angle-down fa-bounce" aria-hidden="true" onclick="is_Checkbox_Checked(this)"></i>
                     </span>
                 </label>
-                <input type="checkbox" id="touch">
+                <input type="checkbox" id="languages" name="checkbox">
                 <ul class="slide">
                     <li>
                         <i class="fa-brands fa-js"></i> JavaScript
@@ -43,12 +44,31 @@
                 </ul>
             </nav>
             <nav class="dropdown">
-                <label for="touch2">
+                <label for="tools">
                     <span>
-                        <i class="fa-solid fa-download"></i> Downloadable Documents:
+                        Tools <i class="fa-solid fa-angle-down fa-bounce" aria-hidden="true" onclick="is_Checkbox_Checked(this)"></i>
                     </span>
                 </label>
-                <input type="checkbox" id="touch2">
+                <input type="checkbox" id="tools" name="checkbox">
+                <ul class="slide">
+                    <li>
+                        <i class="fa-brands fa-square-github"></i> Git & Github
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-terminal"></i> WSL (Windows Subsystem Linux)
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-pen-ruler"></i> GIMP
+                    </li>
+                </ul>
+            </nav>
+            <nav class="dropdown">
+                <label for="dlc">
+                    <span>
+                        Downloadable Documents <i class="fa-solid fa-angle-down fa-bounce" aria-hidden="true" onclick="is_Checkbox_Checked(this)"></i>
+                    </span>
+                </label>
+                <input type="checkbox" id="dlc" name="checkbox">
                 <ul class="slide">
                     <li>
                         <a href="./dlc/Adams_David-Paul_Lebenslauf.pdf" download="Adams_David-Paul_CV">
@@ -99,14 +119,6 @@
                             Codewars
                         </p>
                         </li>
-                    <li class="icon">
-                        <a href="mailto:david-paul.adams@outlook.de">
-                            <img src="./img/envelope-regular.svg" alt="Briefumschlag" title="Lassen Sie mir eine Mail da">
-                        </a>
-                        <p>
-                            Mail
-                        </p>
-                    </li>
                 </ul>
             </nav>
         </footer>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -15,16 +15,16 @@
         <div class="wrapper">
         <header class="header">
             <h1>Hi! I'm David-Paul Adams</h1>
-            <p>Trainee as an IT specialist - specializing in application development</p>
+            <p>Trainee as a Specialised Computer Scientist - Subject Software Development</p>
             <a href="mailto:david-paul.adams@outlook.de"><i class="fa-regular fa-envelope"></i> Get in touch with me</a>
         </header>
             <nav class="dropdown">
                 <label for="languages">
-                    <span>
-                        Languages <i class="fa-solid fa-angle-down fa-bounce" aria-hidden="true" onclick="is_Checkbox_Checked(this)"></i>
+                    <span id="icon_languages" class="icon_before">
+                        Languages
                     </span>
                 </label>
-                <input type="checkbox" id="languages" name="checkbox">
+                <input type="checkbox" id="languages" name="languages" onclick="changeDropdownIcon_Language()">
                 <ul class="slide">
                     <li>
                         <i class="fa-brands fa-js"></i> JavaScript
@@ -45,11 +45,11 @@
             </nav>
             <nav class="dropdown">
                 <label for="tools">
-                    <span>
-                        Tools <i class="fa-solid fa-angle-down fa-bounce" aria-hidden="true" onclick="is_Checkbox_Checked(this)"></i>
+                    <span id="icon_tools" class="icon_before">
+                        Tools
                     </span>
                 </label>
-                <input type="checkbox" id="tools" name="checkbox">
+                <input type="checkbox" id="tools" name="tools" onclick="changeDropdownIcon_Tools()">
                 <ul class="slide">
                     <li>
                         <i class="fa-brands fa-square-github"></i> Git & Github
@@ -60,15 +60,18 @@
                     <li>
                         <i class="fa-solid fa-pen-ruler"></i> GIMP
                     </li>
+                    <li>
+                        <i class="fa-solid fa-gem"></i> Obsidian
+                    </li>
                 </ul>
             </nav>
             <nav class="dropdown">
                 <label for="dlc">
-                    <span>
-                        Downloadable Documents <i class="fa-solid fa-angle-down fa-bounce" aria-hidden="true" onclick="is_Checkbox_Checked(this)"></i>
+                    <span id="icon_dlc" class="icon_before">
+                        Downloadable Documents
                     </span>
                 </label>
-                <input type="checkbox" id="dlc" name="checkbox">
+                <input type="checkbox" id="dlc" name="dlc" onclick="changeDropdownIcon_Dlc()">
                 <ul class="slide">
                     <li>
                         <a href="./dlc/Adams_David-Paul_Lebenslauf.pdf" download="Adams_David-Paul_CV">
@@ -82,47 +85,47 @@
                     </li>
                 </ul>
             </nav>
+        </div>
         <footer class="footer">
             <nav>
                 <ul class="navigation">
-                    <li class="icon">
+                    <li class="image">
                         <a href="https://www.bbw-suedhessen.de/" target="_blank">
-                        <img src="./img/bbw_icon.png" alt="berufsbildungswerk webseite" title="Homepage vom Berufsbildungswerk in Karben">
-                        </a>
+                        <img src="./img/bbw_icon.png" alt="berufsbildungswerk webseite" title="Homepage vom Berufsbildungswerk in Karben" style="background-color: #ee7339; border-radius: 20px;">
                         <p>
                             Berufsbildungswerk
                             <br>
                             Südhessen
                         </p>
+                        </a>
                         </li>
-                    <li class="icon">
+                    <li class="image">
                         <a href="https://github.com/metar00t" target="_blank">
                         <img src="./img/github-brands-solid.svg" alt="github profil" title="Mein Github Profil">
-                        </a>
                         <p>
                             Github
                         </p>
+                        </a>
                         </li>
-                    <li class="icon">
+                    <li class="image">
                         <a href="https://code.golf/golfers/metar00t" target="_blank">
                         <img src="./img/code_golf_icon.png" alt="codegolf profil" title="Mein Code.Golf Profil">
-                        </a>
                         <p>
                             Code.Golf
                         </p>
-                        </li>
-                    <li class="icon">
-                        <a href="https://www.codewars.com/users/metar00t" target="_blank">
-                        <img src="./img/codewars_icon.svg" alt="codewars profil" title="Mein Codewars Profil">
                         </a>
+                        </li>
+                    <li class="image">
+                        <a href="https://www.codewars.com/users/metar00t" target="_blank">
+                        <img src="./img/codewars_icon.svg" alt="codewars profil" title="Mein Codewars Profil" style="background-color: orange; border-radius: 20px;">
                         <p>
                             Codewars
                         </p>
+                        </a>
                         </li>
                 </ul>
             </nav>
         </footer>
-        </div>
         <script src="./js/config.js"></script>
     </body>
 </html>

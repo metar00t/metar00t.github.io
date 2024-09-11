@@ -15,6 +15,17 @@ body {
     position: absolute;
     padding-inline: 30%;
 }
+.attribution {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-inline: 10em;
+    margin-top: 20em;
+    color: var(--lightgray)
+}
+.attribution a {
+    color: var(--gray);
+}
 
 .header > a {
     text-decoration: none;

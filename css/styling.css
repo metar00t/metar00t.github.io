@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     scroll-behavior: smooth;
-    position: absolute;
+    background-position: absolute;
     padding-inline: 30%;
 }
 .attribution {
@@ -98,8 +98,12 @@ nav.dropdown {
     margin: 1.5px;
 }
 
+.dropdown ul {
+    display: inline-block;
+}
+
 .dropdown li {
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
     list-style-type: none;
     background: var(--silver);
@@ -110,6 +114,7 @@ label {
     font-size: 1.3em;
     cursor: pointer;
     display: block;
+    text-decoration: underline;
     transition: transform 2s;
 }
 
@@ -138,7 +143,6 @@ label {
 
 .slide li {
     padding: 15px;
-    border-radius: 10px;
 }
 
 .slide a {
@@ -153,7 +157,7 @@ label {
 }
 
 #languages:checked + .slide {
-    height: 260px;
+    height: 270px;
 }
 
 #tools {
@@ -181,20 +185,4 @@ label {
     .aside-1 {order: 2;}
     .aside-2 {order: 3;}
     .footer {order: 4;}
-}
-/* Medium Screens */
-@media all and (min-width: 600px) {
-    .aside { display: flex 1;}
-}
-/* Medium Screens */
-@media all and (max-width: 800px){
-    .navigation {
-        justify-content: space-around;
-    }
-}
-/* Small Screens */
-@media all and (max-width: 500px) {
-    .navigation {
-        flex-direction: column;
-    }
 }

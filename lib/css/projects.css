@@ -1,0 +1,35 @@
+/* Variablen für die verschiedenen Farboptionen */
+:root{
+    --lightgray: lightgray;
+    --silver: silver;
+    --black: black;
+    --gray: gray;
+}
+
+/* HTML Base Styling */
+body {
+    background-image: url("/../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-position: absolute;
+    padding-inline: 30%;
+}
+
+header {
+    color: var(--silver);
+    text-align: center;
+}
+
+/* Project List Styling */
+.projects {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-evenly;
+    color: var(--silver);
+    background-color: var(--black);
+}
+
+.project_list {
+    list-style-type: none;
+}

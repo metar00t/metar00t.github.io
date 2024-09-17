@@ -1,0 +1,83 @@
+/* HTML Dropdown Styling */
+nav.dropdown {
+    margin: 1.5px;
+}
+
+.dropdown ul {
+    display: inline-block;
+}
+
+.dropdown li {
+    text-align: left;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+/* HTML Dropdown Label Styling */
+label {
+    font-size: 1.3em;
+    cursor: pointer;
+    display: block;
+    text-decoration: underline;
+    transition: transform 2s;
+}
+
+/* Dropdown Label icon Styling */
+.icon_before:before {
+    content : "\e185";
+    font-family: FontAwesome;
+    left: -5px;
+    top: 0;
+}
+
+.icon_after:before {
+    content : "\f07c";
+    font-family: FontAwesome;
+    left: -5px;
+    top: 0;
+}
+
+/* Slider Styling */
+.slide {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+
+.slide li {
+    padding: 15px;
+}
+
+.slide a {
+    color: var(--silver);
+    text-decoration: none;
+}
+
+/* Animations for the Dropdown Sliders */
+#languages {
+    position: absolute; 
+    opacity: 0; 
+}
+
+#languages:checked + .slide {
+    height: 270px;
+}
+
+#tools {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}
+
+#tools:checked + .slide {
+    height: 250px;
+}
+#dlc {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}
+#dlc:checked + .slide {
+    height: 150px;
+}

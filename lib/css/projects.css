@@ -16,13 +16,17 @@ body {
     padding-inline: 30%;
 }
 
+a {
+    color: var(--silver);
+}
+
 header {
     color: var(--silver);
     text-align: center;
 }
 
-/* Project List Styling */
-.projects {
+/* Project Display Styling */
+.portfolio {
     display: flex;
     flex-wrap: row wrap;
     justify-content: space-evenly;
@@ -30,6 +34,16 @@ header {
     background-color: var(--black);
 }
 
-.project_list {
-    list-style-type: none;
+.project {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--lightgray);
+    margin: 10px;
+    display: inline-block;
+    line-height: 200px;
+    text-align: center;
+}
+
+.showcase {
+    height: 200px;
 }

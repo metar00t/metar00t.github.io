@@ -1,8 +1,8 @@
 .attribution {
-    text-align: center;
     justify-content: center;
     padding-inline: 10em;
     color: var(--gray);
+    background-color: var(--black);
 }
 .attribution a {
     text-decoration: none;

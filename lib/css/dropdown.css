@@ -51,7 +51,6 @@ label {
 
 .slide a {
     color: var(--silver);
-    text-decoration: none;
 }
 
 /* Animations for the Dropdown Sliders */
@@ -61,7 +60,7 @@ label {
 }
 
 #languages:checked + .slide {
-    height: 270px;
+    height: 375px;
 }
 
 #tools {

@@ -1,5 +1,5 @@
 /* Variablen für die verschiedenen Farboptionen */
-:root{
+:root {
     --lightgray: lightgray;
     --silver: silver;
     --black: black;
@@ -27,11 +27,8 @@ header {
 
 /* Project Display Styling */
 .portfolio {
-    display: flex;
-    flex-wrap: row wrap;
     justify-content: space-evenly;
     color: var(--silver);
-    background-color: var(--black);
 }
 
 .project {
@@ -42,6 +39,10 @@ header {
     display: inline-block;
     line-height: 200px;
     text-align: center;
+}
+
+.project a {
+    cursor: alias;
 }
 
 .showcase {

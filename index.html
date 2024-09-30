@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- Attribution to Bradley Williamson (bwilliamson) for the Background. Source => https://wallpapersafari.com/w/A25VTP -->
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="David-Paul Adams">
     <title>
-        Welcome to my Portfolio!
+        David Adams | Apprentice Software Developer
     </title>
     <link rel="icon" type="icon/x-icon" href="./img/webdev-icon.png">
     <link rel="stylesheet" href="./lib/css/portfolio.css">
@@ -14,35 +14,43 @@
     <link rel="stylesheet" href="./lib/css/dropdown.css">
     <script src="https://kit.fontawesome.com/6bfe7427b4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="wrapper">
-    <header class="header">
-        <h1>Hi! I'm David-Paul Adams</h1>
-        <p>Apprentice as a Specialised Computer Scientist - Subject Software Development</p>
-        <a href="mailto:david-paul.adams@outlook.de"><i class="fa-regular fa-envelope"></i> Get in touch with me</a>
-    </header>
+        <header class="header">
+            <h1>Hi! I'm David-Paul Adams</h1>
+            <p>Apprentice as a Specialised Computer Scientist - Subject Software Development</p>
+            <a href="mailto:david-paul.adams@outlook.de"><i class="fa-regular fa-envelope"></i> Get in touch with me</a>
+        </header>
         <nav class="dropdown">
             <label for="languages">
                 <span id="icon_languages" class="icon_before">
                     Languages
                 </span>
             </label>
-            <input type="checkbox" id="languages" class="checkbox" name="languages" onclick="changeDropdownIcon_Language()">
+            <input type="checkbox" id="languages" class="checkbox" name="languages"
+                onclick="changeDropdownIcon_Language()">
             <ul class="slide">
                 <li>
+                    <i class="fa-solid fa-v"></i><i class="fa-solid fa-b"></i> VisualBasic <br> (.NET)
+                </li>
+                <li>
                     <i class="fa-brands fa-js"></i> JavaScript
+                </li>
+                <li>
+                    <i class="fa-brands fa-node-js"></i> NodeJS
                 </li>
                 <li>
                     <i class="fa-brands fa-php"></i> PHP
                 </li>
                 <li>
-                    <i class="fa-solid fa-c"></i> C
-                </li>
-                <li>
-                    <i class="fa-solid fa-v"></i><i class="fa-solid fa-b"></i> VisualBasic <br> (.NET)
+                    <i class="fa-solid fa-database"></i> SQL
                 </li>
                 <li>
                     <i class="fa-brands fa-css3-alt"></i> CSS
+                </li>
+                <li>
+                    <i class="fa-solid fa-c"></i> C
                 </li>
             </ul>
         </nav>
@@ -74,16 +82,11 @@
         <nav class="dropdown">
             <label for="dlc">
                 <span id="icon_dlc" class="icon_before">
-                    More about me
+                    About me
                 </span>
             </label>
             <input type="checkbox" id="dlc" class="checkbox" name="dlc" onclick="changeDropdownIcon_Dlc()">
             <ul class="slide">
-                <li>
-                    <a href="/html/projects.html">
-                        <i class="fa-solid fa-folder-tree"></i>My Projects
-                    </a>
-                </li>
                 <li>
                     <a href="./dlc/Adams_David-Paul_Lebenslauf.pdf" download="Adams_David-Paul_résumé">
                         <i class="fa-solid fa-file-pdf"></i>My résumé
@@ -94,6 +97,11 @@
                         <i class="fa-solid fa-file-pdf"></i>Coding Tree
                     </a>
                 </li>
+                <li>
+                    <a href="/html/projects.html">
+                        <i class="fa-solid fa-folder-tree"></i>My Projects
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -102,50 +110,59 @@
             <ul class="navigation">
                 <li class="image">
                     <a href="https://www.bbw-suedhessen.de/" target="_blank">
-                    <img src="./img/bbw_icon.png" alt="berufsbildungswerk webseite" title="Homepage vom Berufsbildungswerk in Karben" style="background-color: #ee7339; border-radius: 25px;">
-                    <p>
-                        Berufsbildungswerk
-                        <br>
-                        Südhessen
-                    </p>
+                        <img src="./img/bbw_icon.png" alt="berufsbildungswerk webseite"
+                            title="Berufsbildungswerk Südhessen"
+                            style="background-color: #ee7339; border-radius: 25px;">
+                        <p>
+                            Berufsbildungswerk
+                            <br>
+                            Südhessen
+                        </p>
                     </a>
-                    </li>
+                </li>
                 <li class="image">
                     <a href="https://github.com/metar00t" target="_blank">
-                    <img src="./img/github-brands-solid.svg" alt="github profil" title="Mein Github Profil" style="background-color: gray; border-radius: 25px;">
-                    <p>
-                        Github
-                    </p>
+                        <img src="./img/github-brands-solid.svg" alt="github" title="My GitHub Profile"
+                            style="background-color: gray; border-radius: 25px;">
+                        <p>
+                            GitHub
+                        </p>
                     </a>
-                    </li>
+                </li>
                 <li class="image">
                     <a href="https://code.golf/golfers/metar00t" target="_blank">
-                    <img src="./img/code_golf_icon.png" alt="codegolf profil" title="Mein Code.Golf Profil">
-                    <p>
-                        Code.Golf
-                    </p>
+                        <img src="./img/code_golf_icon.png" alt="codegolf profil" title="Mein Code.Golf Profil">
+                        <p>
+                            Code.Golf
+                        </p>
                     </a>
-                    </li>
+                </li>
                 <li class="image">
                     <a href="https://www.codewars.com/users/metar00t" target="_blank">
-                    <img src="./img/codewars_icon.svg" alt="codewars profil" title="Mein Codewars Profil" style="background-color: orange; border-radius: 25px;">
-                    <p>
-                        Codewars
-                    </p>
+                        <img src="./img/codewars_icon.svg" alt="codewars profil" title="Mein Codewars Profil"
+                            style="background-color: orange; border-radius: 25px;">
+                        <p>
+                            Codewars
+                        </p>
                     </a>
                 </li>
             </ul>
         </nav>
     </footer>
     <div class="attribution">
-    <p>
-        Wallpaper by <a href="https://wallpapersafari.com/user/bwilliamson/" class="modal-author modal-shoutout-link" target="_blank">Bradley</a> on <a href="https://wallpapersafari.com/staring-cat-wallpapers/#A25VTP" class="modal-imglink modal-shoutout-link" target="_blank">WallpaperSafari</a>
-    </p>
-    <hr>
-    <p>
-        Website made with <i class="fa-solid fa-heart" style="color:red"></i> by <a href="https://github.com/metar00t" target="_blank"> metar00t </a>
-    </p>
+        <p>
+            Wallpaper by <a href="https://wallpapersafari.com/user/bwilliamson/"
+                class="modal-author modal-shoutout-link" target="_blank">Bradley</a> on <a
+                href="https://wallpapersafari.com/staring-cat-wallpapers/#A25VTP"
+                class="modal-imglink modal-shoutout-link" target="_blank">WallpaperSafari</a>
+        </p>
+        <hr>
+        <p>
+            Website made with <i class="fa-solid fa-heart" style="color:red"></i> by <a
+                href="https://github.com/metar00t" target="_blank"> metar00t </a>
+        </p>
     </div>
     <script src="./lib/js/icon_switcher.js"></script>
 </body>
+
 </html>

@@ -60,7 +60,7 @@ label {
 }
 
 #languages:checked + .slide {
-    height: 375px;
+    height: 450px;
 }
 
 #tools {
@@ -78,5 +78,5 @@ label {
     height: 0px;
 }
 #dlc:checked + .slide {
-    height: 150px;
+    height: 200px;
 }

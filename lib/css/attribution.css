@@ -1,5 +1,6 @@
 .attribution {
     justify-content: center;
+    text-align: center;
     padding-inline: 10em;
     color: var(--gray);
     background-color: var(--black);

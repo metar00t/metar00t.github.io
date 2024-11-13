@@ -4,6 +4,7 @@
     --silver: silver;
     --black: black;
     --gray: gray;
+    --white: white;
 }
 
 /* HTML Base Styling */
@@ -17,7 +18,7 @@ body {
 }
 
 a {
-    color: var(--silver);
+    color: var(--white);
 }
 
 header {

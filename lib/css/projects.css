@@ -14,7 +14,7 @@ body {
     background-size: cover;
     scroll-behavior: smooth;
     background-position: absolute;
-    padding-inline: 30%;
+    padding-inline: 21%;
 }
 
 a {
@@ -36,23 +36,63 @@ header {
 }
 
 .project {
-    width: 200px;
-    height: 200px;
     border: 1px solid var(--lightgray);
     border-radius: 10px;
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--black);
-    opacity: 0.65;
     margin: 10px;
     display: inline-block;
-    line-height: 200px;
     text-align: center;
 }
 
 .project a {
     cursor: alias;
+    background-color: var(--black);
 }
 
 .showcase {
     height: 200px;
+}
+
+/* Preview of the individual Projects */
+
+#bmi{
+    background-image: url("../../img/project/bmi.png");
+    background-repeat: no-repeat;
+    width: 28em;
+    height: 190px;
+    line-height: 250px;
+}
+
+#kuendigungsrechner {
+    background-image: url("../../img/project/kuendigungsrechner.png");
+    background-repeat: no-repeat;
+    width: 19.7em;
+    height: 29.3em;
+    line-height: 110px;
+}
+
+#port {
+    background-image: url("../../img/project/portfolio.png");
+    background-repeat: no-repeat;
+    width: 46em;
+    height: 37.5em;
+    line-height: 450px;
+}
+
+#notenrechner {
+    background-image: url("../../img/project/notenrechner.png");
+    background-repeat: no-repeat;
+    width: 79em;
+    height: 26.5em;
+    line-height: 150px;
+}
+
+#xkcd {
+    background-image: url("../../img/project/november_2016.png");
+    background-repeat: no-repeat;
+    width: 15em;
+    height: 30em;
+    line-height: 150px;
 }

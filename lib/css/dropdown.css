@@ -78,5 +78,5 @@ label {
     height: 0px;
 }
 #dlc:checked + .slide {
-    height: 200px;
+    height: 150px;
 }

@@ -96,3 +96,11 @@ header {
     height: 30em;
     line-height: 150px;
 }
+
+#ptzCamController {
+    background-image: url("../../img/project/PTZ_Cam_Controller.png");
+    background-repeat: no-repeat;
+    width: 52em;
+    height: 60em;
+    line-height: 200px;
+}

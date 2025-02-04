@@ -65,14 +65,6 @@ header {
     line-height: 250px;
 }
 
-#kuendigungsrechner {
-    background-image: url("../../img/project/kuendigungsrechner.png");
-    background-repeat: no-repeat;
-    width: 19.7em;
-    height: 29.3em;
-    line-height: 110px;
-}
-
 #port {
     background-image: url("../../img/project/portfolio.png");
     background-repeat: no-repeat;

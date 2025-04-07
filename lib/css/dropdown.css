@@ -60,7 +60,7 @@ label {
 }
 
 #languages:checked + .slide {
-    height: 450px;
+    height: 480px;
 }
 
 #tools {
@@ -72,11 +72,13 @@ label {
 #tools:checked + .slide {
     height: 300px;
 }
+
 #dlc {
     position: absolute; 
     opacity: 0; 
     height: 0px;
 }
+
 #dlc:checked + .slide {
     height: 150px;
 }

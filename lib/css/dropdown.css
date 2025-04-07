@@ -60,7 +60,7 @@ label {
 }
 
 #languages:checked + .slide {
-    height: 450px;
+    height: 490px;
 }
 
 #tools {
@@ -70,7 +70,7 @@ label {
 }
 
 #tools:checked + .slide {
-    height: 280px;
+    height: 300px;
 }
 #dlc {
     position: absolute; 
